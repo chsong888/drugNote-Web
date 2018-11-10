@@ -1,12 +1,31 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/doctor/doctor"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#53a0fd",
     "navigationBarTitleText": "家庭医院",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#d1a87a",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "家庭药箱",
+        "iconPath": "img/index.png",
+        "selectedIconPath": "img/slt-index.png"
+      },
+      {
+        "pagePath": "pages/doctor/doctor",
+        "text": "家庭医生",
+        "iconPath": "img/doctor.png",
+        "selectedIconPath": "img/slt-doctor.png"
+      }
+    ]
   }
 }

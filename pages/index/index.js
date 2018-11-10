@@ -4,10 +4,17 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    imgUrls: [
+  'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
+  'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+  'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: true,  //是否显示面板指示点
+    autoplay: true,      //是否自动切换
+    interval: 3000,       //自动切换时间间隔
+    duration: 1000,       //滑动动画时长
+    inputShowed: false,
+    inputVal: ""
   },
   //事件处理函数
   bindViewTap: function() {
